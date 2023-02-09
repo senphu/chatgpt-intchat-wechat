@@ -32,7 +32,7 @@
 
 ```bash
 git clone https://github.com/0xXPunkX/chatgpt-intchat-wechat
-cd chatgpt-on-wechat/
+cd chatgpt-intchat-wechat
 ```
 
 安装所需核心依赖
