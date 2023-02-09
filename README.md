@@ -31,7 +31,7 @@
 克隆项目代码
 
 ```bash
-git clone https://github.com/xxxxx
+git clone https://github.com/0xXPunkX/chatgpt-intchat-wechat
 cd chatgpt-on-wechat/
 ```
 
