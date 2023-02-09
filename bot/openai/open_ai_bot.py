@@ -58,12 +58,12 @@ class OpenAIBot(Bot):
                 logger.warn("[OPEN_AI] RateLimit exceed, 第{}次重试".format(retry_count+1))
                 return self.reply_text(query, user_id, retry_count+1)
             else:
-                return "提问太快啦，请休息一下再问我吧"
+                return "🤖️我先摆会烂，你去看看服务器的错误日志。"
         except Exception as e:
             # unknown exception
             logger.exception(e)
             Session.clear_session(user_id)
-            return "请再问我一次吧"
+            return "🤖️过载了，请再问一次。"
 
 
     def create_img(self, query, retry_count=0):
@@ -72,7 +72,7 @@ class OpenAIBot(Bot):
             response = openai.Image.create(
                 prompt=query,    #图片描述
                 n=1,             #每次生成图片的数量
-                size="256x256"   #图片大小,可选有 256x256, 512x512, 1024x1024
+                size="1024x1024"   #图片大小,可选有 256x256, 512x512, 1024x1024
             )
             image_url = response['data'][0]['url']
             logger.info("[OPEN_AI] image_url={}".format(image_url))
@@ -84,7 +84,7 @@ class OpenAIBot(Bot):
                 logger.warn("[OPEN_AI] ImgCreate RateLimit exceed, 第{}次重试".format(retry_count+1))
                 return self.reply_text(query, retry_count+1)
             else:
-                return "提问太快啦，请休息一下再问我吧"
+                return "🤖️提问太快啦，请休息一下再问"
         except Exception as e:
             logger.exception(e)
             return None
