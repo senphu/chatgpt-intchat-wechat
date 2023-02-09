@@ -1,13 +1,13 @@
 # Info
 
-> 基于ChatGPT的微信聊天机器人，通过 [OpenAI](https://github.com/openai/openai-quickstart-python) 接口生成对话内容，使用 [itchat](https://github.com/littlecodersh/ItChat) 实现微信消息的接收和自动回复。已实现的特性如下：
+> 基于ChatGPT的微信聊天机器人，通过 [OpenAI] 接口生成对话内容，实现微信消息的接收和自动回复。已实现的特性如下：
 
 - [x] **文本对话：** 接收私聊及群组中的微信消息，使用ChatGPT生成回复内容，完成自动回复
 - [x] **规则定制化：** 支持私聊中按指定规则触发自动回复，支持对群组设置自动回复白名单
 - [x] **图片生成：** 支持根据描述生成图片，并自动发送至个人聊天或群聊
 - [x] **上下文记忆**：支持多轮对话记忆，且为每个好友维护独立的上下会话
 
->引入 [itchat-uos](https://github.com/why2lyj/ItChat-UOS) 替换 itchat，解决由于不能登录网页微信而无法使用的问题，且解决Python3.9的兼容问题
+>引入 [itchat-uos](https://github.com/why2lyj/ItChat-UOS)，解决由于不能登录网页微信而无法使用的问题，解决Python3.9的兼容问题
 
 >支持根据描述生成图片并发送，openai版本需大于0.25.0
 
