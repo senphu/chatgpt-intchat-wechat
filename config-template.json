@@ -3,8 +3,8 @@
   "single_chat_prefix": ["bot", "@bot"],
   "single_chat_reply_prefix": ["bot"],
   "group_chat_prefix": ["@bot"],
-  "group_name_white_list": ["群名1", "群名2"],
-  "image_create_prefix": ["画", "Design", "找"],
+  "group_name_white_list": ["群名1", "群名2", "群名3", "群名4", "群名5"],
+  "image_create_prefix": ["画", "Design"],
   "conversation_max_tokens": 2000,
-  "character_desc": "我是人工智障 GPT, 一个由 OpenAI 训练的大型语言模型，版本为 GPT-3, 目前支持对话、搜索、画图。"
+  "character_desc": "我是人工智能 GPT, 一个由 OpenAI 训练的大型语言模型，版本为 GPT-3, 目前支持对话、搜索、画图。"
 }
