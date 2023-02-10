@@ -47,7 +47,7 @@ pip3 install --upgrade openai
 
 ## B. 配置
 
-配置文件的模板在根目录的`config-template.json`中，通过命令复制该模板创建最终生效的 `config.json` 文件：
+配置文件的模板在根目录的`config-template.json`中，通过命令复制该模板创建最终生效的 `config.json` 文件：1
 
 ```bash
 cp config-template.json config.json
